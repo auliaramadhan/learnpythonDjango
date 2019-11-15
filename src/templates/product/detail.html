@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ <!-- built in filte django bisa liat doc  -->
+
+<h1> {{ title|capfirst }}</h1>
+
+<h2>hai</h2>
+
+<p>
+  {% if desc != None and desc != '' %}
+   {{ desc}}
+  {% else %}
+   coming soon  
+  {% endif %}
+</p>
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ <!-- built in filte django bisa liat doc  -->
+
+<h1> {{ title|capfirst|upper }}</h1>
+
+<h2>hai</h2>
+
+<p>
+  {{ my_number }}
+</p>
+<ul>
+   {% for  i in list %}
+      {% if i == 2 %}
+         <!-- built in filte django bisa liat doc  -->
+         <li>{{forloop.counter}} - {{i|add:10}}</li>
+      {% endif %}
+      <li> {{forloop.counter}} - {{i}} </li>
+   {% endfor %}
+
+
+</ul>
+
+{% endblock %}
