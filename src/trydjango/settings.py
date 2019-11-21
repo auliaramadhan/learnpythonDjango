@@ -42,7 +42,8 @@ INSTALLED_APPS = [
 
 
     # my application
-    'products'
+    'products',
+    'blog'
 ]
 
 MIDDLEWARE = [
